@@ -1,0 +1,73 @@
+.about-section {
+    color: white;
+    background-color: black;
+    text-align: justify;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.leadership {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  /* Allows items to wrap in smaller screens */
+    margin: 10px 0;
+}
+
+.leader {
+    text-align: center;
+    margin: 20px 20px;  /* Reduced margin for better spacing on all screens */
+}
+
+.leader-photo {
+    width: 180px;
+    height: 200px;
+    margin: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+h2, h3 {
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+p {
+    margin: 0 0 20px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive adjustments for tablets and mobile phones */
+@media (max-width: 768px) {
+    .leader {
+        margin: 20px 10px;  /* Smaller lateral margins on smaller screens */
+    }
+
+    .leader-photo {
+        width: 150px;  /* Smaller photo dimensions on smaller devices */
+        height: 170px;
+        margin: 10px;  /* Smaller margins for photos */
+    }
+
+    p, h2, h3 {
+        padding: 0 10px;  /* Add padding to keep text from the edges */
+    }
+}
+
+/* More specific adjustments for mobile phones */
+@media (max-width: 480px) {
+    .leadership {
+        flex-direction: column;  /* Stack images vertically on small screens */
+    }
+
+    .leader-photo {
+        width: 120px;  /* Even smaller photos for very small screens */
+        height: 140px;
+    }
+
+    .about-section {
+        padding: 20px 10px;  /* Reduced padding for smaller screens */
+    }
+}

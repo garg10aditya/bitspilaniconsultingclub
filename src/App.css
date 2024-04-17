@@ -1,20 +1,16 @@
 .App {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -23,16 +19,61 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes blinkTextCursor {
+  from { border-right-color: rgba(255, 255, 255, 0.75); }
+  to { border-right-color: transparent; }
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  font-style:oblique;
+  font-family: 'Times New Roman', Times, serif;
+  border-right: .15em solid rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typewriter 4s steps(40, end),
+    blinkTextCursor 750ms step-end infinite;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Spacing between cards */
+  padding: 20px;
+}
+
+.hero-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  height: 100vh; /* Makes it full height of the viewport */
+  color: white;
+  background-color: #000000; /* Dark background for the header */
+  margin-top: -60px; /* Negative margin to overlap the navbar if needed */
+  padding-top: 60px; /* Adjust this if your navbar height changes */
+}
+
+/* Additional styles for the navbar to ensure it's over the hero content and transparent */
+.navbar {
+  background: rgba(0, 0, 0, 0.2); /* Slightly see-through */
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10; /* Higher than the hero content */
+}
+
+/* Text styles for the main greeting */
+.hero-header h1 {
+  font-size: calc(2vw + 20px); /* Responsive font size */
+  padding: 0 20px; /* Padding to prevent text touching the edges */
 }
