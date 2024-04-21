@@ -4,62 +4,51 @@ import './App.css';
 import About from './About';
 import ArticleCard from './ArticleCard';
 import Navbar from './Navbar';
-
+import ArticleDetail from './ArticleDetail';
+import studies from './studies.json'; // Ensure this file is correctly structured and imported
+import ContactForm from './ContactForm';
+import Testimonials from './Testimonials';
+import Events from './Events';
 function App() {
-  const articles = [
-    {
-      title: "Latest Insights in Consulting",
-      thumbnail: "https://via.placeholder.com/150",
-      description: "Discover the latest trends and strategies in management consulting that are transforming businesses worldwide."
-    },
-    {
-      title: "Emerging Markets Analysis",
-      thumbnail: "https://via.placeholder.com/150",
-      description: "An in-depth look at the opportunities in emerging markets and how businesses can capitalize on them."
-    },
-    {
-      title: "Sustainability in Business",
-      thumbnail: "https://via.placeholder.com/150",
-      description: "How companies are integrating sustainability practices into their operations for long-term benefits."
-    }
-  ];
-
-
   return (
     <Router>
       <div className="App">
         <Navbar />
         <Routes>
           <Route path="/" element={
-            <>
-              <header className="App-header">
-                <div className="typewriter">
-                  <header className='hero-header'>
-                    <h1>Welcome to BITS Pilani Consulting Club</h1>
-                  </header>
-                  <div className="card-container">
-                    {articles.map(article => (
-                      <ArticleCard
-                        key={article.title}
-                        title={article.title}
-                        thumbnail={article.thumbnail}
-                        description={article.description}
-                      />
+            <div>
+              <div className="App-header sedan-regular">
+                <img className="main-logo" src='./logo.jpg' />
+              </div>
+              <div className="card-container sedan-regular">
+                {studies.map((study, index) => (
+                  <ArticleCard
+                    key={index} // Ideally, use a unique identifier if available
+                    id={study.id}
+                    title={study.title}
+                    thumbnail={study.thumbnail}
+                    description={study.description}
+                  />
+                ))}
+              </div>
+              <div className="testimonials-section sedan-regular">
+                <Testimonials />
 
-
-
-                    ))}
-
-                  </div>
-                </div>
-              </header >
-            </>
+              </div>
+              <ContactForm />
+            </div>
           } />
           <Route path="/about" element={<About />} />
+          <Route path="/study/:id" element={<ArticleDetail />} /> {/* Fixed route for React Router v6 */}
+          <Route path="/events" element={<Events />} />
+          <Route path="/contactus" element={<ContactForm />} />
+
 
         </Routes>
-      </div >
-    </Router >
+      </div>
+
+
+    </Router>
   );
 }
 

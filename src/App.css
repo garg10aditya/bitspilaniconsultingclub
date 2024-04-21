@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+
+
+body {
+    overflow-x: hidden;  
+font-family: "Sedan", serif; /* Setting the custom font as the default for the body */
+}
+
+/* Specific font styles for regular and italic text using Sedan font */
+.sedan-regular {
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.main-logo{
+  width: 100%;
+}
+
+
 .App {
   text-align: center;
   margin: 0;
@@ -9,9 +28,11 @@
 }
 
 
+
 .App-header {
   background-color: #000000;
   min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,28 +40,9 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-@keyframes typewriter {
-  from { width: 0; }
-  to { width: 100%; }
-}
 
-@keyframes blinkTextCursor {
-  from { border-right-color: rgba(255, 255, 255, 0.75); }
-  to { border-right-color: transparent; }
-}
 
-.typewriter h1 {
-  overflow: hidden;
-  font-style:oblique;
-  font-family: 'Times New Roman', Times, serif;
-  border-right: .15em solid rgba(255, 255, 255, 0.75);
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .15em;
-  animation:
-    typewriter 4s steps(40, end),
-    blinkTextCursor 750ms step-end infinite;
-}
+
 
 .card-container {
   display: flex;
@@ -76,4 +78,18 @@
 .hero-header h1 {
   font-size: calc(2vw + 20px); /* Responsive font size */
   padding: 0 20px; /* Padding to prevent text touching the edges */
+}
+.testimonials-section {
+  margin: 40px auto;  
+  padding: 20px 0;  
+  border-top: 1px solid #ccc;  
+  border-bottom: 1px solid #ccc;  
+}
+
+.testimonials-section {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  margin: 0px 100px;
+  padding-bottom: 100px;
 }

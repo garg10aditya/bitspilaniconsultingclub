@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Formula 1 Business Model Explained",
+        "description": "A comprehensive study focusing on the how one of the richest leagues in the world operates and makes money.",
+        "thumbnail": "/images/study1/1.png",
+        "images": [
+            "/images/study1/1.png",
+            "/images/study1/2.png",
+            "/images/study1/3.png",
+            "/images/study1/4.png",
+            "/images/study1/5.png",
+            "/images/study1/6.png",
+            "/images/study1/7.png",
+            "/images/study1/8.png"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "The rise and fall of ByJu's",
+        "description": "Exploring the rapid advancements in technology and their implications for startups in Silicon Valley.",
+        "thumbnail": "/images/study2/1.jpg",
+        "images": [
+            "/images/study2/1.jpg",
+            "/images/study2/2.jpg",
+            "/images/study2/3.jpg",
+            "/images/study2/4.jpg",
+            "/images/study2/5.jpg",
+            "/images/study2/6.jpg",
+            "/images/study2/7.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Study on Economic Impacts",
+        "description": "A comprehensive study focusing on the economic impacts of renewable energy investments across different regions.",
+        "thumbnail": "/images/study1/img1.jpg",
+        "images": [
+            "/images/study1/img1.jpg",
+            "/images/study1/img1.jpg",
+            "/images/study1/img1.jpg",
+            "/images/study1/img1.jpg",
+            "/images/study1/img1.jpg",
+            "/images/study1/img1.jpg",
+            "/images/study1/img1.jpg",
+            "/images/study1/img1.jpg",
+            "/images/study1/img1.jpg"
+        ]
+    }
+]

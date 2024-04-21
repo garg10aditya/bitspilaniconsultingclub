@@ -1,15 +1,19 @@
 import React from 'react';
-import './ArticleCard.css';  // Import CSS for styling
+import { Link } from 'react-router-dom';
+import './ArticleCard.css';
 
-const ArticleCard = ({ title, thumbnail, description }) => {
+const ArticleCard = ({ id, title, thumbnail, description }) => {
+    const trimmedDescription = description.length > 50 ? `${description.substring(0, 50)}...` : description;
+
     return (
-        <div className="article-card">
-            <img src={thumbnail} alt={title} className="article-image" />
+        <Link to={`/study/${id}`} className="article-card sedan-regular">
+            <img src={`${process.env.PUBLIC_URL}${thumbnail}`} alt={title} className="article-image" />
             <div className="article-content">
                 <h3>{title}</h3>
-                <p>{description.length > 70 ? description.substring(0, 70) + '...' : description}</p>
+                <div className="divider"></div>
+                <p>{trimmedDescription}</p>
             </div>
-        </div>
+        </Link>
     );
 }
 

@@ -1,0 +1,57 @@
+/* ContactForm.css */
+.contact-form {
+    background-color: #000;  /* Black background for elegance */
+    padding: 40px;  /* Ample padding for a balanced layout */
+    margin: 40px auto;  /* Centering the form on the page */
+    width: 50%;  /* Appropriate width for form */
+    border-radius: 8px;  /* Rounded corners for modern look */
+    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.2);  /* Subtle cyan glow for a pop of color */
+    color: white;  /* White text color */
+}
+
+.contact-form h2 {
+    color: rgb(255, 255, 255);  /* Cyan color for headings to match the shadow */
+    text-align: center;  /* Center-align the heading */
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centering form elements */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;  /* Controlled width of input fields */
+    padding: 12px;  /* Comfortable padding inside fields */
+    margin: 8px 0;  /* Margin for vertical spacing */
+    border: 1px solid #333;  /* Subtle border color */
+    background-color: #222;  /* Darker background for inputs */
+    color: #ddd;  /* Light gray text for readability */
+    border-radius: 4px;  /* Rounded corners for inputs */
+    outline: none;  /* Removes the default focus outline */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0ff;  /* Cyan border on focus */
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.5);  /* Glowing effect on focus */
+}
+
+.contact-form button {
+    width: 50%;  /* Matching button width to input fields */
+    padding: 10px 0;  /* Padding for button height */
+    background-color: #0ff;  /* Cyan background for the button */
+    color: #000;  /* Black text for contrast */
+    font-weight: bold;  /* Bold font for presence */
+    border: none;  /* No border */
+    border-radius: 4px;  /* Rounded corners for the button */
+    cursor: pointer;  /* Cursor to pointer to indicate it's clickable */
+    transition: background-color 0.3s, color 0.3s;  /* Smooth transition for hover effects */
+    margin: 20px;
+}
+
+.contact-form button:hover {
+    background-color: #06c;  /* Darker cyan on hover */
+    color: #fff;  /* White text on hover */
+}

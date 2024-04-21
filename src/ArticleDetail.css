@@ -1,0 +1,79 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sedan', serif;  /* Assuming 'Sedan' is imported elsewhere in your global styles */
+    background-color: #000; /* Black background for the page */
+    color: #fff; /* White text for better contrast on black background */
+}
+
+/* Main content container styling */
+.article-detail {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px; /* Assuming your navbar is around 60px high */
+    padding: 20px; /* Padding around the content area */
+    overflow: hidden;
+}
+
+/* Main content area */
+.main-content {
+    width: 75%;
+    overflow-y: auto; /* Enables vertical scrolling for the main content area */
+    padding: 20px;
+    border-right: 1px solid #ccc; /* Adds a divider between main content and sidebar */
+}
+
+
+/* Sidebar styling */
+.sidebar {
+    width: 35%; /* 35% width minus a bit for margin */
+    border-left: 1px solid #888; /* Light grey vertical line for separation */
+    padding: 20px; /* Padding inside the sidebar */
+    height: 100%; /* Full viewport height */
+    overflow-y: auto; /* Enable scrolling for overflow content */
+}
+
+/* Image styling */
+img {
+    display: block; /* Ensures each image is on a new line */
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px; /* Space between images */
+}
+
+/* Heading and text styling */
+.ADh1 {
+    padding-top: 20px;
+    border-bottom: 1px solid #888; /* Horizontal line under headings */
+    padding-bottom: 10px; /* Space under text before the line */
+}
+
+/* Link styling within the sidebar */
+.sidebar a {
+    color: #9cf; /* Light blue color for links to stand out */
+    text-decoration: none; /* No underlines */
+    padding: 5px 0; /* Padding around links */
+    display: block; /* New line for each link */
+    transition: color 0.3s; /* Smooth transition for hover effects */
+}
+
+.sidebar a:hover {
+    color: #ddf; /* Lighter blue on hover */
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 800px) {
+    .article-detail {
+        flex-direction: column; /* Stack vertically on smaller screens */
+    }
+    .main-content, .sidebar {
+        width: 100%; /* Full width for both sections */
+        margin-right: 0; /* Remove margin */
+    }
+    .sidebar {
+        border-left: none; /* Remove vertical line */
+        border-top: 1px solid #888; /* Add horizontal line at top */
+        padding-top: 20px; /* Padding at the top */
+    }
+}

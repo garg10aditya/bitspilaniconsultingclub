@@ -1,0 +1,69 @@
+.testimonials-container {
+    width: 50%;
+    background-color: #000000; /* Light grey background */
+    padding: 20px;
+    text-align: center; /* Center the text inside the container */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+.testimonials-container {
+    overflow-x: hidden;  /* Hide horizontal scrollbar */
+}
+
+.testimonial {
+    margin: auto;
+    width: 40%; /* Width of the testimonial text container */
+    font-style: italic;
+    color: #ffffff; /* Dark grey text color */
+}
+
+.author {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffffff; /* Light grey text color for author */
+}
+.testimonials-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust based on your content */
+    background-color: #000;
+    color: #fff;
+}
+
+.scrolling-wrapper {
+    display: flex;
+    animation: scroll-left 30s linear infinite;
+    padding: 20px 0;
+}
+
+.testimonial-box {
+    min-width: 300px; /* Ensure each box has sufficient width */
+    margin-right: 50px; /* Space between each testimonial */
+    flex-shrink: 0;
+}
+
+.testimonial-text {
+    font-size: 26px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.scrolling-wrapper:hover {
+    animation-play-state: paused;
+}
+

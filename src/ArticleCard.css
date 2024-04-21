@@ -1,38 +1,79 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
+
+/* Body and Font Styles */
+body {
+    font-family: "Sedan", serif; /* Setting the custom font as the default for the body */
+}
+
+/* Specific font styles for regular and italic text using Sedan font */
+.sedan-regular {
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sedan-regular-italic {
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Main card container */
 .article-card {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.23); /* Using RGBA for a semi-transparent white background */
+    border: 1px solid #e1e1e1;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    margin: 20px;
     overflow: hidden;
-    width: 400px;  
-    height: 500px; 
-  }
-  
-  .article-image {
-    height: 65%; 
-    width: 100%; 
-    object-fit: cover; 
-  }
-  
-  .article-content {
-    padding: 10px;
-    flex-grow: 1; 
+    width: 400px;
+    height: 500px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer; /* Cursor pointer to indicate it's clickable */
+    text-decoration: none; /* Remove default link decoration */
+    color: inherit; /* Inherit text color */
+}
+
+/* Image styling */
+.article-image {
+    height: 60%;
+    width: 100%;
+    object-fit: cover; /* Cover to ensure images fit nicely */
+}
+
+/* Content area within the card */
+.article-content {
+    padding: 20px;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
-  
-  .article-content h3 {
-    margin: 0;
-    color: #333;
-    font-size: 16px; 
-  }
-  
-  .article-content p {
-    margin: 0;
-    color: #666;
-    font-size: 14px; 
-  }
-  
+}
+
+.article-content h3 {
+    margin-bottom: 10px;
+    color: #fff; /* Using white color for text */
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.article-content p {
+    color: #fff; /* Consistent white color for easier reading */
+    font-size: 16px;
+}
+
+/* Hover effects for the card */
+.article-card:hover {
+    transform: translateY(-25px); /* Lift card slightly on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08); /* Deeper shadow for a pop effect */
+}
+
+/* Divider style */
+.divider {
+    height: 2px;
+    background-color: #ccc;
+    margin: 8px 0;
+}
