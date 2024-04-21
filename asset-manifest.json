@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/bitspilaniconsultingclub/static/css/main.aa917bf7.css",
+    "main.js": "/bitspilaniconsultingclub/static/js/main.8551ba72.js",
+    "static/js/453.ae708223.chunk.js": "/bitspilaniconsultingclub/static/js/453.ae708223.chunk.js",
+    "static/media/president.jpeg": "/bitspilaniconsultingclub/static/media/president.711ef99aacf067e00fec.jpeg",
+    "static/media/logo.jpg": "/bitspilaniconsultingclub/static/media/logo.ffc490615906e3ca46e6.jpg",
+    "static/media/vice-president.jpeg": "/bitspilaniconsultingclub/static/media/vice-president.0312b823498a1ac97efe.jpeg",
+    "index.html": "/bitspilaniconsultingclub/index.html",
+    "main.aa917bf7.css.map": "/bitspilaniconsultingclub/static/css/main.aa917bf7.css.map",
+    "main.8551ba72.js.map": "/bitspilaniconsultingclub/static/js/main.8551ba72.js.map",
+    "453.ae708223.chunk.js.map": "/bitspilaniconsultingclub/static/js/453.ae708223.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa917bf7.css",
+    "static/js/main.8551ba72.js"
+  ]
+}
